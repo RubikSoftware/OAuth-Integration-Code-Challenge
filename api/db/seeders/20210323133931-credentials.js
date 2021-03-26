@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 module.exports = {
   up: queryInterface =>
     queryInterface.bulkInsert('Credentials', [
@@ -7,7 +7,7 @@ module.exports = {
         accessToken: 'todo_access_token_123',
         refreshToken: 'todo_refresh_token_456',
         createdAt: new Date(),
-        updatedAt: new Date(),
+        updatedAt: new Date()
       }
     ], {}),
   down: (queryInterface, Sequelize) => {
@@ -17,6 +17,6 @@ module.exports = {
       Example:
       return queryInterface.bulkDelete('People', null, {});
     */
-    return queryInterface.bulkDelete('Credentials', null, {});
+    return queryInterface.bulkDelete('Credentials', null, {})
   }
-};
+}
