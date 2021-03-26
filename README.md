@@ -17,7 +17,6 @@ We expect you to collaborate with us the same way that you'd do in a daily basis
 * On clicking the button you should start the OAuth flow and be redirected to the Github Authorization page.
 * After the user accepts the Authorization, store the credentials so you can use the Github API.
 * Using the credentials call the Github API to get the needed information and list it on the /results page of the application.
-* You should use Node JS and Express Routes for every API call you make. The only frontend requests should be the "initialize the OAuth flow" and the "getUserData path" after you obtained the credentials for the OAuth app and stored them. (!!! Do use only the API routes to call the githubAPI - don't call Github API directly from the Frontend app).
 * Use the .env file to store the Github Client Id and Client Secret.
 ### Needed information
 * Authenticated user's login, id, link to user's github page (on click redirect to the user's profile) and email (if available - email is available if listed as public on github page).
