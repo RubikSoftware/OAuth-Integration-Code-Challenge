@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import logo from '../logo.svg';
 
@@ -28,6 +29,11 @@ function Home() {
         <p>
           TODO: Add initialize OAuth flow button here
         </p>
+        <Link to="/debug">
+          <button className="bg-gray-500 p-2 text-sm rounded-md">
+            debug
+          </button>
+        </Link>
       </header>
     </div>
   );

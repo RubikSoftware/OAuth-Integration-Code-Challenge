@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const db = require('../db/models');
+const axios = require('axios');
 
 router.get('/', (req, res) => {
     res.send("Hello World from API!");
@@ -55,6 +56,21 @@ router.delete('/credentials/:credentialsId', async (req, res) => {
         }
       });
     res.status(204).send();
+});
+
+router.get('/github/test-request', async (req, res) => {
+    const login = req.params.login;
+
+    const githubClient = axios.create({
+        baseURL: 'https://api.github.com',
+        headers: {
+            Accept: 'application/json',
+        },
+    });
+
+    const octocat = (await githubClient.get(`/users/octocat`)).data;
+
+    res.send(octocat);
 });
 
 /**
