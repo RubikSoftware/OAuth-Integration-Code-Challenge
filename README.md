@@ -12,6 +12,7 @@ We expect you to collaborate with us the same way that you'd do in a daily basis
 2. Create a page where the user can see his public and private repositories, filter and sort them.
 ## Requirements
 ### * Make sure your repository is private and add us as collaborators. You can invite us using the following usernames: rbagrin, elgutierrez
+### ** Please don't push any changes to your mainf branch. Checkout a new branch and push your changes on that branch, then open a Pull Request. 
 * Create the Github OAuth application.
 * Create a start page with a form containing a button which will be used to initiate the Github OAuth flow.
 * On clicking the button you should start the OAuth flow and be redirected to the Github Authorization page.
