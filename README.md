@@ -7,18 +7,20 @@ We expect you to collaborate with us the same way that you'd do in a daily basis
 * Write clear commit messages and keep your commit history clean.
 * We would like to see some tests (Frontend and Backend). There's no need to cover everything, just pick the most important cases to see how you deal with it.
 * If you're applying to a Frontend/Fullstack role, it's nice to give some attention to the UI/UX aspect of it.
+
 ### Brief
 1. Create a web app which enables a user to view his github profile details after authorizing the Github application the user has created.
 2. Create a page where the user can see his public and private repositories, filter and sort them.
 ## Requirements
 ### * Make sure your repository is private and add us as collaborators. You can invite us using the following usernames: rbagrin, elgutierrez
-### ** Please don't push any changes to your mainf branch. Checkout a new branch and push your changes on that branch, then open a Pull Request. 
+### ** Please don't push any changes to your main branch. Checkout a new branch and push your changes on that branch, then open a Pull Request. 
 * Create the Github OAuth application.
 * Create a start page with a form containing a button which will be used to initiate the Github OAuth flow.
 * On clicking the button you should start the OAuth flow and be redirected to the Github Authorization page.
 * After the user accepts the Authorization, store the credentials so you can use the Github API.
 * Using the credentials call the Github API to get the needed information and list it on the /results page of the application.
 * Use the .env file to store the Github Client Id and Client Secret.
+#### * Listing user's repositories is required (Preferably both Public and Private repositories)
 ### Needed information
 * Authenticated user's login, id, link to user's github page (on click redirect to the user's profile) and email (if available - email is available if listed as public on github page).
 * login, id, link to user's github page and email of the octocat user.
